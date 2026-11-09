@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # CSE202 Banking System - Part B
 
 Layers (each layer only talks to the one below it):
