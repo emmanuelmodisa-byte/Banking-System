@@ -1,0 +1,78 @@
+/* Banking application theme */
+.root {
+    -fx-font-family: "Segoe UI", "Arial";
+    -fx-font-size: 13px;
+    -fx-background-color: #343434;
+}
+.label {
+    -fx-text-fill: #F5F5F5;
+}
+.button {
+    -fx-background-color: #A51F3D;
+    -fx-text-fill: #FFFDF9;
+    -fx-font-weight: bold;
+    -fx-background-radius: 7;
+    -fx-padding: 9 17 9 17;
+    -fx-cursor: hand;
+}
+.button:hover { -fx-background-color: #86172F; }
+.button:pressed { -fx-background-color: #681126; }
+
+.text-field, .password-field, .combo-box {
+    -fx-background-color: #F7F4EF;
+    -fx-border-color: #777777;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 8;
+    -fx-text-fill: #292929;
+    -fx-prompt-text-fill: #777777;
+}
+.text-field:focused, .password-field:focused, .combo-box:focused {
+    -fx-border-color: #A51F3D;
+    -fx-border-width: 1.5;
+}
+.table-view {
+    -fx-background-color: #F7F4EF;
+    -fx-control-inner-background: #F7F4EF;
+    -fx-border-color: #777777;
+    -fx-border-radius: 7;
+    -fx-background-radius: 7;
+}
+.table-view .column-header-background,
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: #D9D9D9;
+}
+.table-view .column-header, .table-view .filler {
+    -fx-border-color: transparent transparent #B5B5B5 transparent;
+    -fx-size: 34px;
+}
+.table-view .column-header .label {
+    -fx-text-fill: #7F1831;
+    -fx-font-weight: bold;
+}
+.table-row-cell { -fx-border-color: transparent transparent #E1E1E1 transparent; }
+.table-row-cell:filled:selected { -fx-background-color: #F2DCE1; }
+.table-row-cell:filled:selected .text { -fx-fill: #681126; }
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #292929;
+}
+.tab-pane .tab { -fx-background-color: #555555; -fx-background-radius: 7 7 0 0; }
+.tab-pane .tab .tab-label { -fx-text-fill: #F5F5F5; -fx-font-weight: bold; }
+.tab-pane .tab:selected { -fx-background-color: #A51F3D; }
+.tab-pane .tab:selected .tab-label { -fx-text-fill: #FFFDF9; }
+.tab-pane .tab-content-area {
+    -fx-background-color: #343434;
+    -fx-border-color: #555555;
+}
+.combo-box .list-cell { -fx-text-fill: #292929; }
+.combo-box-popup .list-view { -fx-background-color: #F7F4EF; }
+.combo-box-popup .list-cell:filled:selected,
+.combo-box-popup .list-cell:filled:hover {
+    -fx-background-color: #F2DCE1;
+    -fx-text-fill: #681126;
+}
+.scroll-bar:vertical .thumb, .scroll-bar:horizontal .thumb {
+    -fx-background-color: #888888;
+    -fx-background-radius: 8;
+}

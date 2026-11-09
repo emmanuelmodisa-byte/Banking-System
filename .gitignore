@@ -1,0 +1,10 @@
+target/
+out/
+*.class
+.idea/
+.vscode/
+*.iml
+*.db
+*.mv.db
+*.trace.db
+*.lock.db
