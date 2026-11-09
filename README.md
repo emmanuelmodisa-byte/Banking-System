@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CSE202 Banking System - Part B
 
 Layers (each layer only talks to the one below it):
@@ -42,3 +43,6 @@ Only one program can use that file at a time, so close the GUI before running Sa
     git branch -M main
     git remote add origin https://github.com/<your-username>/bank-system.git
     git push -u origin main
+=======
+# Banking-System
+>>>>>>> 0d59a3acbb8372e789fae02ae266096051cf3c86
