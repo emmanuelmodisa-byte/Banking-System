@@ -122,10 +122,14 @@ public class AccountController {
             throw new BankException("Enter an amount.");
         }
         try {
-            return Double.parseDouble(text.trim());
-        } catch (NumberFormatException e) {
-            throw new BankException("The amount must be a number, for example 250.50");
-        }
+    double amount = Double.parseDouble(text.trim());
+    if (!Double.isFinite(amount) || amount < 0) {
+        throw new BankException("Enter a valid amount of zero or more.");
+    }
+    return amount;
+} catch (NumberFormatException e) {
+    throw new BankException("The amount must be a number, for example 250.50");
+}
     }
 
     private void checkAccountChosen(String accountNumber) {
